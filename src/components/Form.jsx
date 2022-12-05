@@ -49,8 +49,8 @@ const Form = ({ inputs, handleChange, handleSubmit }) => {
           name="message"
           cols="30"
           rows="10"
-          value={inputs.message || ""}
-          onChange={handleChange}
+          // value={inputs.message || ""}
+          // onChange={handleChange}
         ></textarea>
         <button className="col-span-2 m-2">Submit</button>
       </div>

@@ -1,14 +1,12 @@
 import { useState } from "react";
 import Form from "../components/Form";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const [inputs, setInputs] = useState([]);
   const [inquiries, setInquiries] = useState([]);
   const url = "http://localhost/kodegoPHP/server/react-assign/index.php";
   const getData = new FormData();
-  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -33,7 +31,6 @@ const Contact = () => {
         console.log(error);
       });
     setInputs("");
-    navigate("/contact");
     console.log(inquiries);
     alert("Message sent successfully");
   };
