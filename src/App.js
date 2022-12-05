@@ -13,6 +13,7 @@ function App() {
       <TopBar />
       <Navbar />
       <Routes>
+        <Route path="/react-assign-dec5" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
