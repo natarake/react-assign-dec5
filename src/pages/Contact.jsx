@@ -34,6 +34,8 @@ const Contact = () => {
       });
     setInputs("");
     navigate("/contact");
+    console.log(inquiries);
+    alert("Message sent successfully");
   };
 
   return (
